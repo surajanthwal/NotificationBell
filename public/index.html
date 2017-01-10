@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Notification Bell</title>
+
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-3 border">
+            <div class="col-md-6 margin-top-15">
+                <input type="text" class="  search-query form-control" placeholder="Search"/>
+                <img src="images/search-icon.png" class="searchIcon">
+            </div>
+
+            <div class="col-md-3 dropdown margin-top-15">
+
+                <Input type="image" onclick="myFunction()" src="images/bell.png" class="dropbtn buttonSize">
+                <span id="myBadge" class="badge customBadge"></span>
+                </Input>
+
+                <div id="myDropdown" class="dropdown-content">
+
+                </div>
+            </div>
+            <div class="col-md-3 margin-top-15">
+                <img src="images/message.png" class="buttonSize">
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+
