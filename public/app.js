@@ -17,12 +17,23 @@ function updateBadge() {
         var message = getNotification();
         notifications.push(message);
         badge++;
+        localStorage.setItem("badge", badge);
+        localStorage.setItem("notifications", notifications);
+
         $('#myBadge').empty();
         $('#myBadge').append(badge);
-        console.log("badge: " + badge);
-        console.log("array: " + notifications[notifications.length - 1]);
+
     }, 2000);
 
+}
+
+if (typeof(Storage) !== "undefined") {
+    // console.log(localStorage.getItem("badge"));
+    if (localStorage.getItem("badge"))
+        badge = localStorage.getItem("badge");
+    if (localStorage.getItem("notifications"))
+        notifications = localStorage.getItem("notifications").split(",");
+   
 }
 updateBadge();
 
